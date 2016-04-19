@@ -1,0 +1,10 @@
+#cucumber.yml
+
+default: -p cross
+
+android: PLATFORM=android -r features/support/ -r features/step_definitions/android -r features/pages/android -r features/support/common -r features/step_definitions/common -r features/pages/common
+
+ios: PLATFORM=ios -r features/support/ -r features/step_definitions/ios -r features/pages/ios -r features/support -r features/step_definitions/common -r features/pages/common
+
+cross: PLATFORM=cross -r features/support -r features/step_definitions -r features/pages -r features/support/common -r features/step_definitions/common -r features/pages/common
+
